@@ -46,9 +46,9 @@ The project highlights:
 
 
 
-# Methodology
+## Methodology
 
-## Simulate dataset
+### Simulate dataset
 
 n <- 60
 data <- data.frame(
@@ -70,8 +70,8 @@ AE_FLAG = sample(c(0, 1), n, replace = TRUE, prob = c(0.7, 0.3))
 adam <- data %>% select(USUBJID, TRT01A, AGE, SEX, BASE, WEEK4, CHG, AE_FLAG)
 head(adam)
 
-# Results
-1. Baseline Demographics
+## Results
+**1. Baseline Demographics**
 
 table1 <- adam %>%
 group_by(TRT01A) %>%
@@ -87,15 +87,12 @@ gt(table1) %>%
 tab_header(title = "Table 1: Baseline Demographics")
 
 
-TRT01A	N	Mean_Age	SD_Age	Female	Male
-DrugA	30	51.5	6.6	14	16
-Placebo	30	49.7	7.8	19	11
 <img width="661" height="88" alt="image" src="https://github.com/user-attachments/assets/fbdb8640-aab6-4f3d-8b9f-3ab0a7ab38ba" />
 
-## Interpretation:
+**Interpretation:** 
 Both groups are comparable in age and sex distribution, indicating balanced randomization.
 
-2. Efficacy Analysis
+**2. Efficacy Analysis**
 
 efficacy <- adam %>%
 group_by(TRT01A) %>%
@@ -113,16 +110,14 @@ gt(efficacy) %>%
 tab_header(title = "Table 2: Efficacy – Change in SBP from Baseline")
 
 
-TRT01A	Mean_BASE	Mean_WEEK4	Mean_CHG	SD_CHG	P_value
-DrugA	138.2	128.1	-10.1	4.8	
-Placebo	139.1	136.5	-2.6	4.4	0
+
 <img width="802" height="88" alt="image" src="https://github.com/user-attachments/assets/9aba2be6-e073-4e64-acc4-b35381160b8e" />
 
-## Interpretation:
+**Interpretation:**
 Mean SBP reduction is larger in the Drug A arm compared to Placebo.
 A t-test shows a statistically significant difference (p ≈ 0.04), suggesting potential treatment efficacy.
 
-3. Safety Analysis
+**3. Safety Analysis**
 
 ae_summary <- adam %>%
 group_by(TRT01A) %>%
@@ -136,16 +131,13 @@ gt(ae_summary) %>%
 tab_header(title = "Table 3: Adverse Events Summary")
 
 
-TRT01A	N	AE_Count	AE_Percent
-DrugA	30	11	36.7
-Placebo	30	11	36.7
 <img width="385" height="88" alt="image" src="https://github.com/user-attachments/assets/75bf7441-d691-4b51-915c-7e79253a82cd" />
 
 
-## Interpretation:
+**Interpretation:**
 The frequency of adverse events is similar between treatment arms, indicating acceptable tolerability of Drug A.
 
-# Visualization
+## Visualization
 Boxplot – Change in SBP by Treatment
 ggplot(adam, aes(x = TRT01A, y = CHG, fill = TRT01A)) +
 geom_boxplot() +
@@ -159,7 +151,7 @@ theme_minimal()
 <img width="407" height="263" alt="sbp_change_boxplot" src="https://github.com/user-attachments/assets/2f950e5a-2449-4b8d-9693-5ff6bf537af3" />
 
 
-## Interpretation:
+**Interpretation:**
 Drug A shows a greater downward shift (larger negative change), consistent with a stronger blood pressure-lowering effect.
 
 Line Plot – Mean SBP Over Time
@@ -181,10 +173,10 @@ theme_minimal()
 
 
 
-## Interpretation:
+**Interpretation:**
 Mean SBP decreases more markedly in the Drug A group, demonstrating a treatment effect consistent with the efficacy table.
 
-# Discussion
+## Discussion
 
 The simulated data mimic a realistic small-scale clinical study.
 
@@ -192,7 +184,7 @@ The analytical steps reproduce the ADaM → TLF workflow, commonly used in clini
 
 Results show significant efficacy and comparable safety, providing a template for future programming practice.
 
-# Key Learnings
+## Key Learnings
 
 Simulating clinical trial data for reproducible analyses
 
