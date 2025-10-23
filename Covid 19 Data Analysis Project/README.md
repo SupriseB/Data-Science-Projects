@@ -39,16 +39,8 @@ Documentation	Clear, commented code for traceable analysis
 
 # Project Structure
 
-COVID_Analysis/
-├── covid_19_data.csv        # Original dataset from Kaggle
-├── covid_analysis.R         # Main R script
-├── covid_cleaned.csv        # Cleaned dataset
-├── covid_summary.csv        # Summary statistics by country
-├── covid_correlation.csv    # Correlation results
-├── daily_cases_plot.png     # Daily cases trend plot
-├── daily_deaths_plot.png    # Daily deaths trend plot
-├── rolling_avg_cases_plot.png # 7-day rolling average plot
-└── README.md                # Project overview and instructions
+<img width="359" height="224" alt="image" src="https://github.com/user-attachments/assets/1d8c71f7-7720-42b3-8817-0d6f32220909" />
+
 
 # Methodology
 
