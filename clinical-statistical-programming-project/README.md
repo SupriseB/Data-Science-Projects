@@ -42,22 +42,8 @@ The project highlights:
 ---
 
 ## Repository Structure
-clinical-statistical-programming-project/
-│
-├── scripts/
-│ └── clinical_trial.R # Main script (run this file)
-│
-├── data/
-│ ├── adam_dataset.csv # Derived ADaM-like dataset
-│ ├── table1_baseline.csv # Baseline demographics
-│ ├── table2_efficacy.csv # Efficacy summary
-│ └── table3_ae.csv # Adverse events summary
-│
-├── output/
-│ ├── sbp_change_boxplot.png # Change in SBP visualization
-│ └── mean_sbp_trend.png # Mean SBP trend over time
-│
-└── README.md # Project overview and instructions
+<img width="342" height="238" alt="image" src="https://github.com/user-attachments/assets/36efeedb-daed-4463-9b12-06ba084fd8af" />
+
 
 ##  How to Run
 
