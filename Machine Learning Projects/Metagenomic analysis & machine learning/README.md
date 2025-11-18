@@ -1,4 +1,4 @@
-# Metagenomics Analysis Pipeline -- README
+# Metagenomics Analysis Pipeline 
 
 This repository contains a full end-to-end metagenomics analysis
 pipeline implemented in Python.\
@@ -8,7 +8,7 @@ explainability.
 
 ------------------------------------------------------------------------
 
-## 🚀 Features
+##  Features
 
 ### **1. Data Input**
 
@@ -22,7 +22,7 @@ explainability.
 
 ------------------------------------------------------------------------
 
-## ⚙️ **2. Data Filtering & Transformations**
+##  **2. Data Filtering & Transformations**
 
 -   **Low‑abundance species filtering** based on prevalence and mean
     abundance.
@@ -34,7 +34,7 @@ explainability.
 
 ------------------------------------------------------------------------
 
-## 📊 **3. Diversity Analyses**
+##  **3. Diversity Analyses**
 
 ### **Alpha Diversity**
 
@@ -54,7 +54,7 @@ explainability.
 
 ------------------------------------------------------------------------
 
-## 🧪 **4. PERMANOVA**
+##  **4. PERMANOVA**
 
 A custom implementation of PERMANOVA evaluates community differences
 between groups.\
@@ -62,7 +62,7 @@ Results saved in: - `PERMANOVA_results.txt`
 
 ------------------------------------------------------------------------
 
-## 🤖 **5. Machine Learning Models**
+##  **5. Machine Learning Models**
 
 Trains multiple classifiers: - XGBoost\
 - Random Forest\
@@ -79,7 +79,7 @@ Outputs: - Trained model `.pkl` files - `model_performance.csv` -
 
 ------------------------------------------------------------------------
 
-## 🔍 **6. SHAP Feature Importance**
+##  **6. SHAP Feature Importance**
 
 -   SHAP summary plot for XGBoost\
     Output:\
@@ -87,7 +87,7 @@ Outputs: - Trained model `.pkl` files - `model_performance.csv` -
 
 ------------------------------------------------------------------------
 
-## 📁 **Output Directory**
+##  **Output Directory**
 
 All results are generated inside:
 
@@ -95,7 +95,7 @@ All results are generated inside:
 
 ------------------------------------------------------------------------
 
-## ▶️ Running the Pipeline
+## Running the Pipeline
 
 1.  Install dependencies:
 
@@ -121,7 +121,7 @@ ID_COL = "Infant_Number"
 
 ------------------------------------------------------------------------
 
-## 📝 Author
+## Author
 
 Suprise Baloyi\
 Metagenomic Analysis Workflow -- 2025
