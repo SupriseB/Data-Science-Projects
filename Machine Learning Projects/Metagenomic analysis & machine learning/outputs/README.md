@@ -63,7 +63,7 @@ All models (XGBoost, RandomForest, Logistic Regression, SVM, KNN, MLP) produced 
 
 ## 6. Overall Interpretation
 
-Across all levels of analysis—machine learning classification, alpha diversity, beta diversity, and PERMANOVA—there is consistent evidence that:
+Across all levels of analysis—machine learning classification, alpha diversity, beta diversity, and PERMANOVA;there is consistent evidence that:
 
 ### **Delivery mode does not strongly influence the species‑level gut microbiome in this dataset.**
 
